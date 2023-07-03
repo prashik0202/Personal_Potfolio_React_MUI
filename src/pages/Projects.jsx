@@ -27,7 +27,7 @@ const project = [
     "description" : "GNS Loan Service gives best loan deals for their customer", 
     "image" : gns, 
     "github" : "https://github.com/prashik0202/GNS_LOAN_SEVICES", 
-    "live" : "https://gnsloan-aacf3.web.app/"
+    "live" : "https://gns-loan.vercel.app/"
   },
   { 
     "id" : "3", 
@@ -44,17 +44,18 @@ export default function Projects() {
   const isNonMobile = useMediaQuery("(min-width : 600px)")
 
   return (
+    <div id='projects'>
     <Box  marginTop={isNonMobile ? 30 : 5} marginBottom={10}>
       <Typography variant='h5'>Projects</Typography>
       <Box marginTop={5}>
 
-        <Grid container>
+        <Grid container spacing={2}>
           { project.map((item) => (
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={4} key={item.id}>
             
             <Card 
               sx={{ 
-                maxWidth: 345 , 
+                maxWidth: '100%' , 
                 color : '#00e676' , 
                 my : 1,
               }} 
@@ -99,5 +100,6 @@ export default function Projects() {
 
       </Box>
     </Box> 
+    </div>
   )
 }

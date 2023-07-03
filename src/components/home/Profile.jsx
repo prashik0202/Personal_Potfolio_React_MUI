@@ -7,7 +7,7 @@ export default function Profile() {
     const isNonMobile = useMediaQuery("(min-width : 600px)")
     return (
         <Box
-            marginTop={isNonMobile ? '100px' : '0px'}
+            marginTop={isNonMobile ? '170px' : '0px'}
             marginLeft={isNonMobile ? '60px' : '0px'}
             sx={{
                 width: '100%',

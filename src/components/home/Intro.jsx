@@ -11,7 +11,7 @@ export default function Intro() {
     const isNonMobile = useMediaQuery("(min-width : 600px)")
     return (
         <Box
-            paddingTop={ isNonMobile ? "40%" : "5%"}
+            paddingTop={ isNonMobile ? "50%" : "20%"}
             paddingBottom="10%"
             // 
         >

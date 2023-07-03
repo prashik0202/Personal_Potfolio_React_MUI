@@ -6,6 +6,7 @@ import { Grid } from '@mui/material';
 
 export default function Home() {
     return (
+      <div id='about'>
       <Grid container sx={{ mt : { xs : '2%' , md : '0'}}}>
         <Grid item xs={12} sm={6} md={6}>
           <Intro />
@@ -14,5 +15,6 @@ export default function Home() {
           <Profile />
         </Grid>
       </Grid>
+      </div>
   )
 }

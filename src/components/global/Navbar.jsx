@@ -13,9 +13,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const drawerWidth = 250;
-const navItems = ['About', 'Skills','Projects' ,'Contact'];
 
 function Navbar(props) {
   const { window } = props;
@@ -28,13 +28,39 @@ function Navbar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center',color: '#00e676'  }}>
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+        
+          <ListItem  disablePadding>
+          <AnchorLink href='#about' style={{ textDecoration : 'none' , color : '#00e676'}}>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+              <ListItemText primary="About" />
             </ListItemButton>
+          </AnchorLink>
           </ListItem>
-        ))}
+
+          <ListItem  disablePadding>
+          <AnchorLink href='#skills' style={{ textDecoration : 'none' , color : '#00e676'}}>
+            <ListItemButton sx={{ textAlign: 'center' }}>
+              <ListItemText primary="Skills" />
+            </ListItemButton>
+          </AnchorLink>
+          </ListItem>
+
+          <ListItem  disablePadding>
+          <AnchorLink href='#projects' style={{ textDecoration : 'none' , color : '#00e676'}}>
+            <ListItemButton sx={{ textAlign: 'center' }}>
+              <ListItemText primary="Projects" />
+            </ListItemButton>
+          </AnchorLink>
+          </ListItem>
+
+          <ListItem  disablePadding>
+          <AnchorLink href='#about' style={{ textDecoration : 'none' , color : '#00e676'}}>
+            <ListItemButton sx={{ textAlign: 'center' }}>
+              <ListItemText primary="Contact" />
+            </ListItemButton>
+          </AnchorLink>
+          </ListItem>
+
       </List>
     </Box>
   );
@@ -44,10 +70,9 @@ function Navbar(props) {
   return (
     <Box >
       <AppBar 
-        position="static" 
         component="nav" 
         elevation={0} 
-        sx={{ backgroundColor : "inherit"}}
+        sx={{ backgroundColor : "#121212"}}
       >
         <Toolbar sx={{ color : '#00e676'}}>
           <IconButton
@@ -68,14 +93,38 @@ function Navbar(props) {
           </Typography>
           
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
+
+            <AnchorLink href='#about'>
               <Button 
-              key={item} 
-              sx={{ color: '#00e676' }}
+                sx={{ color: '#00e676' }}
               >
-                {item}
+                About
               </Button>
-            ))}
+            </AnchorLink>
+
+            <AnchorLink href='#skills'>
+              <Button 
+                sx={{ color: '#00e676' }}
+              >
+                Skills
+              </Button>
+            </AnchorLink>
+
+            <AnchorLink href='#projects'>
+              <Button 
+                sx={{ color: '#00e676' }}
+              >
+                Projects
+              </Button>
+            </AnchorLink>
+
+            <AnchorLink href='#about'>
+              <Button 
+                sx={{ color: '#00e676' }}
+              >
+                Contact
+              </Button>
+            </AnchorLink>
           </Box>
         </Toolbar>
       </AppBar>

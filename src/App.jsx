@@ -1,5 +1,6 @@
 import './App.css'
 import { Typography, Container } from '@mui/material';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import Navbar from './components/global/Navbar';
 
@@ -13,7 +14,7 @@ function App() {
     <div className='App'>
       <Container>
         <Navbar />
-        <Home />
+        <Home/>
         <Skills />
         <Project />
       </Container>

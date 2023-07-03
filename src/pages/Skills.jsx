@@ -52,8 +52,11 @@ export default function Skills() {
   const isNonMobile = useMediaQuery("(min-width : 600px)")
 
   return (
-    <Box marginTop={isNonMobile ? '200px' : '20px'} marginBottom={isNonMobile ? 20 : 4}>
-      <Typography variant='h5'>My Skills</Typography> 
+    <div id='skills'>
+    <Box marginTop={isNonMobile ? 20 : 5} marginBottom={isNonMobile ? 10 : 4}>
+      <Box paddingTop={isNonMobile ? 10 : 10}>
+      <Typography variant='h5'>My Skills</Typography>
+      </Box>
       <Box maxWidth={800}textAlign='center'marginTop={5} marginBottom={2}>
         <Grid container spacing={isNonMobile ? 2 : 1}>
           { frontend.map((item) => ( 
@@ -138,5 +141,6 @@ export default function Skills() {
         </Grid>
       </Box>
     </Box>
+    </div>
   )
 }
