@@ -13,7 +13,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import AnchorLink from "react-anchor-link-smooth-scroll";
+// import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link } from 'react-scroll';
+import { useMediaQuery } from '@mui/material';
 
 const drawerWidth = 250;
 
@@ -26,39 +28,55 @@ function Navbar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center',color: '#00e676'  }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center',color: '#ffd700'  }}>
       <List>
         
           <ListItem  disablePadding>
-          <AnchorLink href='#about' style={{ textDecoration : 'none' , color : '#00e676'}}>
+          <Link 
+            to='about'
+            spy={true} smooth={true} offset={0} duration={500} 
+            style={{ textDecoration : 'none' , color : '#ffd700'}}
+          >
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary="About" />
             </ListItemButton>
-          </AnchorLink>
+          </Link>
           </ListItem>
 
           <ListItem  disablePadding>
-          <AnchorLink href='#skills' style={{ textDecoration : 'none' , color : '#00e676'}}>
+          <Link 
+            to='skills'
+            spy={true} smooth={true} offset={-50} duration={500}
+            style={{ textDecoration : 'none' , color : '#ffd700'}}
+          >
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary="Skills" />
             </ListItemButton>
-          </AnchorLink>
+          </Link>
           </ListItem>
 
           <ListItem  disablePadding>
-          <AnchorLink href='#projects' style={{ textDecoration : 'none' , color : '#00e676'}}>
+          <Link 
+            to='projects'
+            spy={true} smooth={true} offset={-50} duration={500}
+            style={{ textDecoration : 'none' , color : '#ffd700'}}
+          >
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary="Projects" />
             </ListItemButton>
-          </AnchorLink>
+          </Link>
           </ListItem>
 
           <ListItem  disablePadding>
-          <AnchorLink href='#about' style={{ textDecoration : 'none' , color : '#00e676'}}>
+          <Link 
+            to='contact' 
+            spy={true} smooth={true} offset={-120} duration={500}
+            style={{ textDecoration : 'none' , color : '#ffd700'}}
+          >
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary="Contact" />
             </ListItemButton>
-          </AnchorLink>
+          </Link>
           </ListItem>
 
       </List>
@@ -74,13 +92,13 @@ function Navbar(props) {
         elevation={0} 
         sx={{ backgroundColor : "#121212"}}
       >
-        <Toolbar sx={{ color : '#00e676'}}>
+        <Toolbar sx={{ color : '#ffd700'}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } , color : '#00e676'}}
+            sx={{ mr: 2, display: { sm: 'none' } , color : '#ffd700'}}
           >
             <MenuIcon />
           </IconButton>
@@ -94,37 +112,37 @@ function Navbar(props) {
           
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
 
-            <AnchorLink href='#about'>
+            <Link to='about' spy={true} smooth={true} offset={0} duration={500}>
               <Button 
-                sx={{ color: '#00e676' }}
+                sx={{ color: '#ffd700' }}
               >
                 About
               </Button>
-            </AnchorLink>
+            </Link>
 
-            <AnchorLink href='#skills'>
+            <Link to='skills' spy={true} smooth={true} offset={-50} duration={500}>
               <Button 
-                sx={{ color: '#00e676' }}
+                sx={{ color: '#ffd700' }}
               >
                 Skills
               </Button>
-            </AnchorLink>
+            </Link>
 
-            <AnchorLink href='#projects'>
+            <Link to='projects' spy={true} smooth={true} offset={-150} duration={500}>
               <Button 
-                sx={{ color: '#00e676' }}
+                sx={{ color: '#ffd700' }}
               >
                 Projects
               </Button>
-            </AnchorLink>
+            </Link>
 
-            <AnchorLink href='#about'>
+            <Link to='contact' spy={true} smooth={true} offset={-90} duration={500}>
               <Button 
-                sx={{ color: '#00e676' }}
+                sx={{ color: '#ffd700' }}
               >
                 Contact
               </Button>
-            </AnchorLink>
+            </Link>
           </Box>
         </Toolbar>
       </AppBar>

@@ -15,14 +15,14 @@ export default function Intro() {
             paddingBottom="10%"
             // 
         >
-            <Typography variant={isNonMobile ? 'h2' : 'h3'}>
+            <Typography variant={isNonMobile ? 'h2' : 'h3'} sx={{ color : '#ffd700'}}>
                 Prashik Gamre
             </Typography>
-            <Typography variant={isNonMobile ? 'h5' : 'h6'} sx={{ color : '#00e676'}}>Full Stack Developer</Typography>
+            <Typography variant={isNonMobile ? 'h5' : 'h6'} sx={{ color : '#ffd700'}}>Full Stack Developer</Typography>
             
             {isNonMobile ? <br /> : ''}
 
-            <Typography variant='body2' sx={{ color : '#00e676'}}>
+            <Typography variant='body2' sx={{ color : '#DAA520'}}>
                 I'm undergraduate I.T student in Mumbai University. <br />
                 Love to learn new technology.
             </Typography>
@@ -39,7 +39,7 @@ export default function Intro() {
                 <InstagramIcon sx={{ color : 'rgb(228, 64, 95)'}}/> 
                 <FacebookIcon sx={{ color : 'rgb(24, 119, 242)'}}/> 
             </Box>
-            <Typography variant='body2'>gamreprashik03@gmail.com</Typography>
+            <Typography variant='body2' sx={{ color : '#cococo'}}>gamreprashik03@gmail.com</Typography>
         </Box>
     )
 }

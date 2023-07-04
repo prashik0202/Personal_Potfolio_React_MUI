@@ -3,10 +3,12 @@ import { Typography, Container } from '@mui/material';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import Navbar from './components/global/Navbar';
+import Footer from './components/global/Footer';
 
 import Home from './pages/Home';
 import Skills from './pages/Skills';
 import Project from './pages/Projects';
+import Contact from './pages/Contact';
 
 function App() {
 
@@ -17,8 +19,9 @@ function App() {
         <Home/>
         <Skills />
         <Project />
+        <Contact />
       </Container>
-      
+      <Footer />
     </div>
   )
 }
