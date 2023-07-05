@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box , Typography } from '@mui/material';
+import { Box , Typography, IconButton } from '@mui/material';
 import { useMediaQuery } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -34,10 +34,34 @@ export default function Intro() {
                 justifyContent='space-between'
                 marginBottom='5px'
             >   
-                <LinkedInIcon sx={{ color : '#0a66c2'}}/> 
+                {/* <LinkedInIcon sx={{ color : '#0a66c2'}}/> 
                 <GitHubIcon /> 
                 <InstagramIcon sx={{ color : 'rgb(228, 64, 95)'}}/> 
-                <FacebookIcon sx={{ color : 'rgb(24, 119, 242)'}}/> 
+                <FacebookIcon sx={{ color : 'rgb(24, 119, 242)'}}/>  */}
+                <IconButton
+                  href='https://www.linkedin.com/in/prashik-gamre-25278b231/'
+                  target='_blank'
+                >
+                  <LinkedInIcon sx={{ color : '#0a66c2'}}/>
+                </IconButton> 
+                <IconButton
+                  href='https://github.com/prashik0202'
+                  target='_blank'
+                >
+                  <GitHubIcon />
+                </IconButton> 
+                <IconButton
+                  href='https://www.instagram.com/_prashik_1223'
+                  target='_blank'
+                >
+                  <InstagramIcon sx={{ color : 'rgb(228, 64, 95)'}}/>
+                </IconButton> 
+                <IconButton
+                  href='https://www.facebook.com/prashik.gamre.3'
+                  target='_blank'
+                >
+                  <FacebookIcon sx={{ color : 'rgb(24, 119, 242)'}}/>
+                </IconButton>
             </Box>
             <Typography variant='body2' sx={{ color : '#cococo'}}>gamreprashik03@gmail.com</Typography>
         </Box>

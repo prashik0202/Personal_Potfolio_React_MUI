@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container , Box , Grid , Typography } from '@mui/material'
+import { Container , Box , Grid , Typography , IconButton} from '@mui/material'
 import { useMediaQuery } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -36,11 +36,35 @@ export default function Footer() {
                 marginBottom={isNonMobile ? 5 : 2}
                 // backgroundColor = 'red'
               >
-                <LinkedInIcon sx={{ color : '#ffd700'}}/> 
-                <GitHubIcon sx={{ color : '#ffd700'}}/> 
-                <InstagramIcon sx={{ color : '#ffd700'}}/> 
-                <FacebookIcon sx={{ color : '#ffd700'}}/> 
-                <EmailIcon sx={{ color : '#ffd700'}}/> 
+                <IconButton
+                  href='https://www.linkedin.com/in/prashik-gamre-25278b231/'
+                  target='_blank'
+                >
+                  <LinkedInIcon sx={{ color : '#ffd700'}}/>
+                </IconButton> 
+                <IconButton
+                  href='https://github.com/prashik0202'
+                  target='_blank'
+                >
+                  <GitHubIcon sx={{ color : '#ffd700'}}/>
+                </IconButton> 
+                <IconButton
+                  href='https://www.instagram.com/_prashik_1223'
+                  target='_blank'
+                >
+                  <InstagramIcon sx={{ color : '#ffd700'}}/>
+                </IconButton> 
+                <IconButton
+                  href='https://www.facebook.com/prashik.gamre.3'
+                  target='_blank'
+                >
+                  <FacebookIcon sx={{ color : '#ffd700'}}/>
+                </IconButton> 
+                <IconButton
+                  onClick={() => window.location = 'mailto:gamreprashik03@gmail.com'}
+                >
+                  <EmailIcon sx={{ color : '#ffd700'}}/>
+                </IconButton> 
               </Box>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>

@@ -23,31 +23,37 @@ export default function Contact() {
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
               <Box padding={isNonMobile ? 10 : 1} marginTop={isNonMobile ? 4 : 2}>
-                <form>
+                <form action="https://formsubmit.co/8fc3faf6a7ab1f0450a8a3a1299702b6" method="POST" >
 
                 <FormControl fullWidth  variant="standard" >
-                  <TextField 
+                  <TextField
+                    name='name'
                     type='text'
                     label="Name" 
                     variant="filled" 
                     color="warning"
                     focused
                     sx={{ marginBottom : 4}}
-                  />
-                </FormControl>
-
-                <FormControl fullWidth  variant="standard">
-                  <TextField 
-                    label="email" 
-                    variant="filled" 
-                    color="warning"
-                    focused
-                    sx={{ marginBottom : 4}}
+                    required
                   />
                 </FormControl>
 
                 <FormControl fullWidth  variant="standard">
                   <TextField
+                    name='email' 
+                    label="email" 
+                    variant="filled" 
+                    color="warning"
+                    focused
+                    sx={{ marginBottom : 4}}
+                    required
+                    type='email'
+                  />
+                </FormControl>
+
+                <FormControl fullWidth  variant="standard">
+                  <TextField
+                    name='message'
                     type='text'
                     label="Message" 
                     variant="filled" 
@@ -61,6 +67,7 @@ export default function Contact() {
 
                 <FormControl fullWidth variant='standard'>
                   <Button
+                    type='submit'
                     variant='contained' 
                     sx={{ 
                       backgroundColor : '#ffd700',
