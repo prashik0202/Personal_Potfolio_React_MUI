@@ -24,7 +24,7 @@ export default function Footer() {
               marginBottom={isNonMobile ? 5 : 2}
               textAlign='center'
               >
-              <Typography variant='h5' sx={{ color : '#ffd700'}}>Prashik Gamre</Typography>
+              <Typography variant='h5' sx={{ color : '#F5F5F5'}}>Prashik Gamre</Typography>
             </Box>
             </Grid>
 
@@ -40,30 +40,30 @@ export default function Footer() {
                   href='https://www.linkedin.com/in/prashik-gamre-25278b231/'
                   target='_blank'
                 >
-                  <LinkedInIcon sx={{ color : '#ffd700'}}/>
+                  <LinkedInIcon sx={{ color : '#F5F5F5'}}/>
                 </IconButton> 
                 <IconButton
                   href='https://github.com/prashik0202'
                   target='_blank'
                 >
-                  <GitHubIcon sx={{ color : '#ffd700'}}/>
+                  <GitHubIcon sx={{ color : '#F5F5F5'}}/>
                 </IconButton> 
                 <IconButton
                   href='https://www.instagram.com/_prashik_1223'
                   target='_blank'
                 >
-                  <InstagramIcon sx={{ color : '#ffd700'}}/>
+                  <InstagramIcon sx={{ color : '#F5F5F5'}}/>
                 </IconButton> 
                 <IconButton
                   href='https://www.facebook.com/prashik.gamre.3'
                   target='_blank'
                 >
-                  <FacebookIcon sx={{ color : '#ffd700'}}/>
+                  <FacebookIcon sx={{ color : '#F5F5F5'}}/>
                 </IconButton> 
                 <IconButton
                   onClick={() => window.location = 'mailto:gamreprashik03@gmail.com'}
                 >
-                  <EmailIcon sx={{ color : '#ffd700'}}/>
+                  <EmailIcon sx={{ color : '#F5F5F5'}}/>
                 </IconButton> 
               </Box>
             </Grid>
@@ -73,7 +73,7 @@ export default function Footer() {
                 marginBottom={isNonMobile ? 5 : 2}
                 textAlign='center'
               >
-                <Typography variant='body2' sx={{ color : "#fdd700"}}>gamreprashik03@gmail.com</Typography>
+                <Typography variant='body2' sx={{ color : "#F5F5F5"}}>gamreprashik03@gmail.com</Typography>
               </Box>
             </Grid>
           </Grid>

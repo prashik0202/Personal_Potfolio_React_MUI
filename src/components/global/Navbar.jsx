@@ -28,14 +28,14 @@ function Navbar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center',color: '#ffd700'  }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center',color: '#f5f5f5'  }}>
       <List>
         
           <ListItem  disablePadding>
           <Link 
             to='about'
             spy={true} smooth={true} offset={0} duration={500} 
-            style={{ textDecoration : 'none' , color : '#ffd700'}}
+            style={{ textDecoration : 'none' , color : '#f5f5f5'}}
           >
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary="About" />
@@ -47,7 +47,7 @@ function Navbar(props) {
           <Link 
             to='skills'
             spy={true} smooth={true} offset={-50} duration={500}
-            style={{ textDecoration : 'none' , color : '#ffd700'}}
+            style={{ textDecoration : 'none' , color : '#f5f5f5'}}
           >
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary="Skills" />
@@ -59,7 +59,7 @@ function Navbar(props) {
           <Link 
             to='projects'
             spy={true} smooth={true} offset={-50} duration={500}
-            style={{ textDecoration : 'none' , color : '#ffd700'}}
+            style={{ textDecoration : 'none' , color : '#f5f5f5'}}
           >
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary="Projects" />
@@ -71,7 +71,7 @@ function Navbar(props) {
           <Link 
             to='contact' 
             spy={true} smooth={true} offset={-120} duration={500}
-            style={{ textDecoration : 'none' , color : '#ffd700'}}
+            style={{ textDecoration : 'none' , color : '#f5f5f5'}}
           >
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary="Contact" />
@@ -92,13 +92,13 @@ function Navbar(props) {
         elevation={0} 
         sx={{ backgroundColor : "#121212"}}
       >
-        <Toolbar sx={{ color : '#ffd700'}}>
+        <Toolbar sx={{ color : '#f5f5f5'}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } , color : '#ffd700'}}
+            sx={{ mr: 2, display: { sm: 'none' } , color : '#f5f5f5'}}
           >
             <MenuIcon />
           </IconButton>
@@ -114,7 +114,12 @@ function Navbar(props) {
 
             <Link to='about' spy={true} smooth={true} offset={0} duration={500}>
               <Button 
-                sx={{ color: '#ffd700' }}
+                sx={{ 
+                  color: '#f5f5f5',
+                  ":hover" : {
+                    color : '#00c853'
+                  }
+                }}
               >
                 About
               </Button>
@@ -122,7 +127,12 @@ function Navbar(props) {
 
             <Link to='skills' spy={true} smooth={true} offset={-50} duration={500}>
               <Button 
-                sx={{ color: '#ffd700' }}
+                sx={{ 
+                  color: '#f5f5f5',
+                  ":hover" : {
+                    color : '#00c853'
+                  }
+                }}
               >
                 Skills
               </Button>
@@ -130,7 +140,12 @@ function Navbar(props) {
 
             <Link to='projects' spy={true} smooth={true} offset={-150} duration={500}>
               <Button 
-                sx={{ color: '#ffd700' }}
+                sx={{ 
+                  color: '#f5f5f5',
+                  ":hover" : {
+                    color : '#00c853'
+                  }
+                }}
               >
                 Projects
               </Button>
@@ -138,7 +153,12 @@ function Navbar(props) {
 
             <Link to='contact' spy={true} smooth={true} offset={-90} duration={500}>
               <Button 
-                sx={{ color: '#ffd700' }}
+                sx={{ 
+                  color: '#f5f5f5',
+                  ":hover" : {
+                    color : '#00c853'
+                  }
+                }}
               >
                 Contact
               </Button>

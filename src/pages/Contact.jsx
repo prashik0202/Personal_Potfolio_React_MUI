@@ -13,7 +13,7 @@ export default function Contact() {
     <div id='contact'>
       <Box marginTop={isNonMobile ? 20 : 1}  marginBottom={isNonMobile ? 10 : 20}>
         <Box>
-          <Typography variant='h5'sx={{ color : '#daa520'}}>Contact Me</Typography>
+          <Typography variant='h5'sx={{ color : '#f5f5f5'}}>Contact Me</Typography>
         </Box>
         <Box>
           <Grid container>
@@ -30,8 +30,8 @@ export default function Contact() {
                     name='name'
                     type='text'
                     label="Name" 
+                    color='success'
                     variant="filled" 
-                    color="warning"
                     focused
                     sx={{ marginBottom : 4}}
                     required
@@ -42,8 +42,8 @@ export default function Contact() {
                   <TextField
                     name='email' 
                     label="email" 
-                    variant="filled" 
-                    color="warning"
+                    variant="filled"
+                    color='success'
                     focused
                     sx={{ marginBottom : 4}}
                     required
@@ -56,8 +56,8 @@ export default function Contact() {
                     name='message'
                     type='text'
                     label="Message" 
-                    variant="filled" 
-                    color="warning"
+                    variant="filled"
+                    color='success' 
                     multiline
                     rows={4}
                     focused
@@ -70,11 +70,11 @@ export default function Contact() {
                     type='submit'
                     variant='contained' 
                     sx={{ 
-                      backgroundColor : '#ffd700',
+                      backgroundColor : '#00e676',
                       color : 'black',
                       fontWeight : 'bold',
                       ":hover" : {
-                        backgroundColor : '#dda520'
+                        backgroundColor : '#00c853'
                       }
                     }}
                     size='large'

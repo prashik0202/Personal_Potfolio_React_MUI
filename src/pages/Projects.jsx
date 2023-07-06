@@ -46,7 +46,7 @@ export default function Projects() {
   return (
     <div id='projects'>
     <Box  marginTop={isNonMobile ? 30 : 5} marginBottom={10}>
-      <Typography variant='h5' sx={{ color : '#daa520'}}>Projects</Typography>
+      <Typography variant='h5' sx={{ color : '#f5f5f5'}}>Projects</Typography>
       <Box marginTop={5}>
 
         <Grid container spacing={2}>
@@ -56,9 +56,9 @@ export default function Projects() {
             <Card 
               sx={{ 
                 maxWidth: '100%' , 
-                color : '#ffd700' ,
+                color : '#00e676' ,
                 my : 1,
-                boxShadow:  '0px 0px 100px -77px rgba(253,215,0,1);'
+                boxShadow:  '0px 0px 300px -77px rgba(0,230,118,1)'
               }} 
               className='card'
             >
@@ -77,7 +77,7 @@ export default function Projects() {
               <CardActions>
                 <Button 
                   size="small" 
-                  sx={{ color : '#ffd700'}}
+                  sx={{ color : '#f5f5f5'}}
                   startIcon={<GitHubIcon />}
                   href={item.github}
                   target='_blank'
@@ -86,7 +86,7 @@ export default function Projects() {
                 </Button>
                 <Button 
                   size="small" 
-                  sx={{ color : '#ffd700'}}
+                  sx={{ color : '#f5f5f5'}}
                   startIcon={<OpenInNewIcon />}
                   href={item.live}
                   target='_blank'
