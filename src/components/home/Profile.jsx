@@ -16,8 +16,8 @@ export default function Profile() {
                     height: 'auto',
                     borderRadius: '50%',
                     overflow: 'hidden',
-                    backgroundColor : '#00e676',
-                    boxShadow:  '0px 0px 300px -77px rgba(0,230,118,1)'
+                    // backgroundColor : '#00e676',
+                    // boxShadow:  '0px 0px 300px -77px rgba(0,230,118,1)'
                 }}
             >
                 <img 

@@ -15,14 +15,15 @@ export default function Intro() {
             paddingBottom="10%"
             // 
         >
-            <Typography variant={isNonMobile ? 'h2' : 'h3'} sx={{ color : '#00e676'}}>
+            <Typography variant={isNonMobile ? 'h2' : 'h3'} sx={{ color : '#00e676'}} className='tracking-in-expand'>
                 Prashik Gamre
             </Typography>
-            <Typography variant={isNonMobile ? 'h5' : 'h6'} sx={{ color : '#f5f5f5'}}>Full Stack Developer</Typography>
+
+            <Typography variant={isNonMobile ? 'h5' : 'h6'} sx={{ color : '#212121'}} className='tracking-in-expand'>Full Stack Developer</Typography>
             
             {isNonMobile ? <br /> : ''}
 
-            <Typography variant='body2' sx={{ color : '#f5f5f5'}}>
+            <Typography variant={isNonMobile ?'body1' : 'body2'} sx={{ color : '#212121'}} className='tracking-in-expand'>
                 I'm undergraduate I.T student in Mumbai University. <br />
                 Love to learn new technology.
             </Typography>
@@ -33,6 +34,7 @@ export default function Intro() {
                 display='flex'
                 justifyContent='space-between'
                 marginBottom='5px'
+                
             >   
                 {/* <LinkedInIcon sx={{ color : '#0a66c2'}}/> 
                 <GitHubIcon /> 
@@ -63,7 +65,7 @@ export default function Intro() {
                   <FacebookIcon sx={{ color : 'rgb(24, 119, 242)'}}/>
                 </IconButton>
             </Box>
-            <Typography variant='body2' sx={{ color : '#cococo'}}>gamreprashik03@gmail.com</Typography>
+            <Typography variant='body2' sx={{ color : '#cococo'}} className='tracking-in-expand'>gamreprashik03@gmail.com</Typography>
         </Box>
     )
 }

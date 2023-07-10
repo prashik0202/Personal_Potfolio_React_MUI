@@ -46,7 +46,7 @@ export default function Projects() {
   return (
     <div id='projects'>
     <Box  marginTop={isNonMobile ? 30 : 5} marginBottom={10}>
-      <Typography variant='h5' sx={{ color : '#f5f5f5'}}>Projects</Typography>
+      <Typography variant='h5' sx={{ color : '#212121'}}>Projects</Typography>
       <Box marginTop={5}>
 
         <Grid container spacing={2}>
@@ -54,11 +54,13 @@ export default function Projects() {
           <Grid item xs={12} sm={6} md={4} key={item.id}>
             
             <Card 
+              elevation={15}
               sx={{ 
                 maxWidth: '100%' , 
-                color : '#00e676' ,
+                color : 'black' ,
                 my : 1,
-                boxShadow:  '0px 0px 300px -77px rgba(0,230,118,1)'
+                // boxShadow:  '0px 0px 300px -77px rgba(0,230,118,1)'
+                backgroundColor : '#f5f5f5'
               }} 
               className='card'
             >
@@ -70,14 +72,14 @@ export default function Projects() {
                 <Typography gutterBottom variant="h5" component="div">
                 {item.title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="black">
                 {item.description}
                 </Typography>
               </CardContent>
               <CardActions>
                 <Button 
                   size="small" 
-                  sx={{ color : '#f5f5f5'}}
+                  sx={{ color : '#00c853'}}
                   startIcon={<GitHubIcon />}
                   href={item.github}
                   target='_blank'
@@ -86,7 +88,7 @@ export default function Projects() {
                 </Button>
                 <Button 
                   size="small" 
-                  sx={{ color : '#f5f5f5'}}
+                  sx={{ color : '#00c853'}}
                   startIcon={<OpenInNewIcon />}
                   href={item.live}
                   target='_blank'

@@ -28,10 +28,10 @@ function Navbar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center',color: '#f5f5f5'  }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center',color: 'black', backgroundColor : 'black'  }}>
       <List>
         
-          <ListItem  disablePadding>
+          <ListItem  disablePadding sx={{ backgroundColor : 'black'}}>
           <Link 
             to='about'
             spy={true} smooth={true} offset={0} duration={500} 
@@ -43,7 +43,7 @@ function Navbar(props) {
           </Link>
           </ListItem>
 
-          <ListItem  disablePadding>
+          <ListItem  disablePadding sx={{ backgroundColor : 'black'}}>
           <Link 
             to='skills'
             spy={true} smooth={true} offset={-50} duration={500}
@@ -55,7 +55,7 @@ function Navbar(props) {
           </Link>
           </ListItem>
 
-          <ListItem  disablePadding>
+          <ListItem  disablePadding sx={{ backgroundColor : 'black'}}>
           <Link 
             to='projects'
             spy={true} smooth={true} offset={-50} duration={500}
@@ -67,7 +67,7 @@ function Navbar(props) {
           </Link>
           </ListItem>
 
-          <ListItem  disablePadding>
+          <ListItem  disablePadding sx={{ backgroundColor : 'black'}}>
           <Link 
             to='contact' 
             spy={true} smooth={true} offset={-120} duration={500}
@@ -90,15 +90,15 @@ function Navbar(props) {
       <AppBar 
         component="nav" 
         elevation={0} 
-        sx={{ backgroundColor : "#121212"}}
+        sx={{ backgroundColor : "#f5f5f5"}}
       >
-        <Toolbar sx={{ color : '#f5f5f5'}}>
+        <Toolbar sx={{ color : 'black'}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } , color : '#f5f5f5'}}
+            sx={{ mr: 2, display: { sm: 'none' } , color : 'black'}}
           >
             <MenuIcon />
           </IconButton>
@@ -107,7 +107,7 @@ function Navbar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none',sm: 'block' } }}
           >
-            Prashik Gamre
+              PG
           </Typography>
           
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
@@ -115,7 +115,7 @@ function Navbar(props) {
             <Link to='about' spy={true} smooth={true} offset={0} duration={500}>
               <Button 
                 sx={{ 
-                  color: '#f5f5f5',
+                  color: 'black',
                   ":hover" : {
                     color : '#00c853'
                   }
@@ -128,7 +128,7 @@ function Navbar(props) {
             <Link to='skills' spy={true} smooth={true} offset={-50} duration={500}>
               <Button 
                 sx={{ 
-                  color: '#f5f5f5',
+                  color: 'black',
                   ":hover" : {
                     color : '#00c853'
                   }
@@ -141,7 +141,7 @@ function Navbar(props) {
             <Link to='projects' spy={true} smooth={true} offset={-150} duration={500}>
               <Button 
                 sx={{ 
-                  color: '#f5f5f5',
+                  color: 'black',
                   ":hover" : {
                     color : '#00c853'
                   }
@@ -154,7 +154,7 @@ function Navbar(props) {
             <Link to='contact' spy={true} smooth={true} offset={-90} duration={500}>
               <Button 
                 sx={{ 
-                  color: '#f5f5f5',
+                  color: 'black',
                   ":hover" : {
                     color : '#00c853'
                   }

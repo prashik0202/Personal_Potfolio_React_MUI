@@ -1,6 +1,7 @@
 import './App.css'
 import { Typography, Container } from '@mui/material';
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import {RemoveScroll} from 'react-remove-scroll';
 
 import Navbar from './components/global/Navbar';
 import Footer from './components/global/Footer';
@@ -13,16 +14,17 @@ import Contact from './pages/Contact';
 function App() {
 
   return (
-    <div className='App'>
-      <Container>
-        <Navbar />
-        <Home/>
-        <Skills />
-        <Project />
-        <Contact />
-      </Container>
-      <Footer />
-    </div>
+    
+      <div className='App'>
+        <Container >
+          <Navbar />
+          <Home/>
+          <Skills />
+          <Project />
+          <Contact /> 
+        </Container>
+        <Footer />
+      </div>
   )
 }
 

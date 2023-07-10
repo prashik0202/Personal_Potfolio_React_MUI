@@ -13,7 +13,7 @@ export default function Contact() {
     <div id='contact'>
       <Box marginTop={isNonMobile ? 20 : 1}  marginBottom={isNonMobile ? 10 : 20}>
         <Box>
-          <Typography variant='h5'sx={{ color : '#f5f5f5'}}>Contact Me</Typography>
+          <Typography variant='h5'sx={{ color : '#212121'}}>Contact Me</Typography>
         </Box>
         <Box>
           <Grid container>

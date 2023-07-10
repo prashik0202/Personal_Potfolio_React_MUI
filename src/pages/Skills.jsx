@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box , Typography, Grid , Divider } from '@mui/material';
+import { Box , Typography, Grid , Divider , Container } from '@mui/material';
 // icons:
 import html from '../assets/html.png';
 import css from '../assets/css.png';
@@ -53,9 +53,9 @@ export default function Skills() {
 
   return (
     <div id='skills'>
-    <Box marginTop={isNonMobile ? 20 : 5} marginBottom={isNonMobile ? 10 : 4}>
+    <Box marginTop={isNonMobile ? 20 : 5} marginBottom={isNonMobile ? 10 : 4} >
       <Box paddingTop={isNonMobile ? 10 : 10}>
-      <Typography variant='h5' sx={{ color : '#f5f5f5'}}>My Skills</Typography>
+      <Typography variant='h5' sx={{ color : '#212121'}}>My Skills</Typography>
       </Box>
       <Box maxWidth={800}textAlign='center'marginTop={5} marginBottom={2}>
         <Grid container spacing={isNonMobile ? 2 : 1}>
@@ -70,6 +70,7 @@ export default function Skills() {
               <Typography 
                   sx={{ textTransform : 'capitalize' , fontWeight : 'bold' }}
                   variant={isNonMobile ? 'body1' : 'body2'}
+                  color={isNonMobile ? 'black' : 'white'}
                 >{item.name}</Typography>
               </Box>
             </Box>
@@ -91,6 +92,7 @@ export default function Skills() {
               <Typography 
                   sx={{ textTransform : 'capitalize' , fontWeight : 'bold' }}
                   variant={isNonMobile ? 'body1' : 'body2'}
+                  color={isNonMobile ? 'black' : 'white'}
                 >{item.name}</Typography>
               </Box>
             </Box>
@@ -112,6 +114,7 @@ export default function Skills() {
               <Typography 
                   sx={{ textTransform : 'capitalize' , fontWeight : 'bold' }}
                   variant={isNonMobile ? 'body1' : 'body2'}
+                  color={isNonMobile ? 'black' : 'white'}
                 >{item.name}</Typography>
               </Box>
             </Box>
@@ -133,6 +136,7 @@ export default function Skills() {
               <Typography 
                   sx={{ textTransform : 'capitalize' , fontWeight : 'bold' }}
                   variant={isNonMobile ? 'body1' : 'body2'}
+                  color={isNonMobile ? 'black' : 'white'}
                 >{item.name}</Typography>
               </Box>
             </Box>
