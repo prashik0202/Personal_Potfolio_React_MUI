@@ -68,7 +68,7 @@ export default function Skills() {
               </Box>
               <Box  borderRadius={2}>
               <Typography 
-                  sx={{ textTransform : 'capitalize' , fontWeight : 'bold' }}
+                  sx={{ textTransform : 'capitalize' }}
                   variant={isNonMobile ? 'body1' : 'body2'}
                   color={isNonMobile ? 'black' : 'white'}
                 >{item.name}</Typography>
@@ -90,7 +90,7 @@ export default function Skills() {
               </Box>
               <Box  borderRadius={2}>
               <Typography 
-                  sx={{ textTransform : 'capitalize' , fontWeight : 'bold' }}
+                  sx={{ textTransform : 'capitalize' }}
                   variant={isNonMobile ? 'body1' : 'body2'}
                   color={isNonMobile ? 'black' : 'white'}
                 >{item.name}</Typography>
@@ -112,7 +112,7 @@ export default function Skills() {
               </Box>
               <Box  borderRadius={2}>
               <Typography 
-                  sx={{ textTransform : 'capitalize' , fontWeight : 'bold' }}
+                  sx={{ textTransform : 'capitalize' }}
                   variant={isNonMobile ? 'body1' : 'body2'}
                   color={isNonMobile ? 'black' : 'white'}
                 >{item.name}</Typography>
@@ -134,7 +134,7 @@ export default function Skills() {
               </Box>
               <Box  borderRadius={2}>
               <Typography 
-                  sx={{ textTransform : 'capitalize' , fontWeight : 'bold' }}
+                  sx={{ textTransform : 'capitalize'  }}
                   variant={isNonMobile ? 'body1' : 'body2'}
                   color={isNonMobile ? 'black' : 'white'}
                 >{item.name}</Typography>
