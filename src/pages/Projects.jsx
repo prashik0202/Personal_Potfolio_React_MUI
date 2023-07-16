@@ -27,7 +27,7 @@ const project = [
     "description" : "GNS Loan Service gives best loan deals for their customer", 
     "image" : gns, 
     "github" : "https://github.com/prashik0202/GNS_LOAN_SEVICES", 
-    "live" : "https://gns-loan.vercel.app/"
+    "live" : "https://gnsloan.in"
   },
   { 
     "id" : "3", 
