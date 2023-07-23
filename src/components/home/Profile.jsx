@@ -8,7 +8,7 @@ export default function Profile() {
     return (
         <div className='profile'>
             <Box
-                marginTop={isNonMobile ? '170px' : '0px'}
+                marginTop={isNonMobile ? '200px' : '0px'}
                 marginLeft={isNonMobile ? '60px' : '0px'}
                 sx={{
                     width: '100%',
@@ -23,7 +23,7 @@ export default function Profile() {
                 <img 
                     src={pp}
                     alt="" 
-                    style={{ width: '100%', height: 'auto' }}
+                    style={{ width: '100%', height: 'auto' , filter: 'brightness(1)' }}
                     
                 />
             </Box>

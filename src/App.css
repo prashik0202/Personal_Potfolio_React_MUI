@@ -7,8 +7,12 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(90deg, rgba(199, 180, 255, 1), rgba(255, 208, 246, 1), rgba(164, 255, 206, 1))
 }
 
+.button {
+  background-color: linear-gradient(90deg, rgba(199, 180, 255, 1), rgba(255, 208, 246, 1), rgba(164, 255, 206, 1))
+}
 
 .pic{
     width: 100%;
@@ -18,7 +22,7 @@
 
 .footer{
     margin-top: auto;
-    background-color: #1d1d1d;
+    background-color: 'rgba(245,245,245,0.3)';
 }
 
 .tracking-in-expand {

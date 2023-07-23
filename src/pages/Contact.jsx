@@ -11,7 +11,7 @@ export default function Contact() {
 
   return (
     <div id='contact'>
-      <Box marginTop={isNonMobile ? 20 : 1}  marginBottom={isNonMobile ? 10 : 20}>
+      <Box marginTop={isNonMobile ? 30 : 1}  marginBottom={isNonMobile ? 10 : 20}>
         <Box>
           <Typography variant='h5'sx={{ color : '#212121'}}>Contact Me</Typography>
         </Box>
@@ -30,7 +30,7 @@ export default function Contact() {
                     name='name'
                     type='text'
                     label="Name" 
-                    color='success'
+                    // color='success'
                     variant="filled" 
                     focused
                     sx={{ marginBottom : 4}}
@@ -43,7 +43,7 @@ export default function Contact() {
                     name='email' 
                     label="email" 
                     variant="filled"
-                    color='success'
+                    // color='success'
                     focused
                     sx={{ marginBottom : 4}}
                     required
@@ -57,7 +57,7 @@ export default function Contact() {
                     type='text'
                     label="Message" 
                     variant="filled"
-                    color='success' 
+                    // color='success' 
                     multiline
                     rows={4}
                     focused
@@ -70,13 +70,14 @@ export default function Contact() {
                     type='submit'
                     variant='contained' 
                     sx={{ 
-                      backgroundColor : '#00e676',
+                      backgroundColor : 'rgba(245,245,245,0.8)',
                       color : 'black',
                       fontWeight : 'bold',
                       ":hover" : {
-                        backgroundColor : '#00c853'
+                        background : 'linear-gradient(90deg, rgba(199, 180, 255, 1), rgba(255, 208, 246, 1), rgba(164, 255, 206, 1))'
                       }
                     }}
+                    elevation={20}
                     size='large'
                   >
                     Submit

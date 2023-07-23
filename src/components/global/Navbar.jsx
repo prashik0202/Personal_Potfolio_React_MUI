@@ -90,7 +90,8 @@ function Navbar(props) {
       <AppBar 
         component="nav" 
         elevation={0} 
-        sx={{ backgroundColor : "#f5f5f5"}}
+        // sx={{ backgroundColor : "#f5f5f5"}}
+        color='transparent'
       >
         <Toolbar sx={{ color : 'black'}}>
           <IconButton
@@ -125,7 +126,7 @@ function Navbar(props) {
               </Button>
             </Link>
 
-            <Link to='skills' spy={true} smooth={true} offset={-50} duration={500}>
+            <Link to='skills' spy={true} smooth={true} offset={-150} duration={500}>
               <Button 
                 sx={{ 
                   color: 'black',
@@ -138,7 +139,7 @@ function Navbar(props) {
               </Button>
             </Link>
 
-            <Link to='projects' spy={true} smooth={true} offset={-150} duration={500}>
+            <Link to='projects' spy={true} smooth={true} offset={-250} duration={500}>
               <Button 
                 sx={{ 
                   color: 'black',

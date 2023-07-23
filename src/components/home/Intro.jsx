@@ -12,20 +12,19 @@ export default function Intro() {
     return (
         <Box
             paddingTop={ isNonMobile ? "50%" : "20%"}
-            paddingBottom="10%"
-            // 
+            paddingBottom="10%" 
         >
-            <Typography variant={isNonMobile ? 'h2' : 'h3'} sx={{ color : '#00e676'}} className='tracking-in-expand'>
+            <Typography variant={isNonMobile ? 'h2' : 'h3'} sx={{ color : 'black'}} className='tracking-in-expand'>
                 Prashik Gamre
             </Typography>
 
-            <Typography variant={isNonMobile ? 'h5' : 'h6'} sx={{ color : '#212121'}} className='tracking-in-expand'>Developer</Typography>
+            <Typography variant={isNonMobile ? 'h4' : 'h5'} sx={{ color : '#212121'}} className='tracking-in-expand'>Developer</Typography>
             
             {isNonMobile ? <br /> : ''}
 
-            <Typography variant={isNonMobile ?'body1' : 'body2'} sx={{ color : '#212121'}} className='tracking-in-expand'>
+            <Typography variant={isNonMobile ?'body1' : 'body1'} sx={{ color : '#212121'}} >
                 I'm undergraduate I.T student in Mumbai University. <br />
-                Love to learn new technology.
+                As an IT undergrad student, I am passionate about technology and its transformative potential.<br/> My personal website showcases my journey in exploring innovative solutions and my commitment to continuous learning in the ever-evolving world of IT. Let's connect and delve into the realm of technology together!
             </Typography>
 
             <Box
@@ -36,10 +35,6 @@ export default function Intro() {
                 marginBottom='5px'
                 
             >   
-                {/* <LinkedInIcon sx={{ color : '#0a66c2'}}/> 
-                <GitHubIcon /> 
-                <InstagramIcon sx={{ color : 'rgb(228, 64, 95)'}}/> 
-                <FacebookIcon sx={{ color : 'rgb(24, 119, 242)'}}/>  */}
                 <IconButton
                   href='https://www.linkedin.com/in/prashik-gamre-25278b231/'
                   target='_blank'
@@ -50,7 +45,7 @@ export default function Intro() {
                   href='https://github.com/prashik0202'
                   target='_blank'
                 >
-                  <GitHubIcon />
+                  <GitHubIcon sx={{ color : 'black'}}/>
                 </IconButton> 
                 <IconButton
                   href='https://www.instagram.com/_prashik_1223'

@@ -62,7 +62,7 @@ export default function Skills() {
           { frontend.map((item) => ( 
             // Frontend Skills
           <Grid item xs={4} sm={4} md={2} key={item.id}>
-            <Box maxWidth={200} padding='4%' backgroundColor={ isNonMobile ? "rgba(245,245,245,0.1)" :item.bgc} borderRadius={2}>
+            <Box maxWidth={200} padding='4%' backgroundColor={ isNonMobile ? "rgba(245,245,245,0.3)" :item.bgc} borderRadius={2}>
               <Box display={isNonMobile ? undefined : 'none'} >
                 <img src={item.image} alt="" height={isNonMobile ? '50px' : '35px'} />
               </Box>
@@ -84,7 +84,7 @@ export default function Skills() {
           { backend.map((item) => ( 
             // backend skills
           <Grid item xs={4} sm={4} md={2} key={item.id}>
-            <Box maxWidth={200} padding='4%' backgroundColor={ isNonMobile ? "rgba(245,245,245,0.1)" :item.bgc} borderRadius={2}>
+            <Box maxWidth={200} padding='4%' backgroundColor={ isNonMobile ? "rgba(245,245,245,0.3)" :item.bgc} borderRadius={2}>
               <Box display={isNonMobile ? undefined : 'none'} >
                 <img src={item.image} alt="" height={isNonMobile ? '50px' : '35px'} />
               </Box>
@@ -106,7 +106,7 @@ export default function Skills() {
           { proglang.map((item) => (
             // programming lang 
           <Grid item xs={4} sm={4} md={2} key={item.id}>
-            <Box maxWidth={200} padding='4%' backgroundColor={ isNonMobile ? "rgba(245,245,245,0.1)" :item.bgc} borderRadius={2}>
+            <Box maxWidth={200} padding='4%' backgroundColor={ isNonMobile ? "rgba(245,245,245,0.3)" :item.bgc} borderRadius={2}>
               <Box display={isNonMobile ? undefined : 'none'} >
                 <img src={item.image} alt="" height={isNonMobile ? '50px' : '35px'} />
               </Box>
@@ -128,7 +128,7 @@ export default function Skills() {
           { db.map((item) => ( 
             // Database
           <Grid item xs={4} sm={4} md={2} key={item.id}>
-            <Box maxWidth={200} padding='4%' backgroundColor={ isNonMobile ? "rgba(245,245,245,0.1)" :item.bgc} borderRadius={2}>
+            <Box maxWidth={200} padding='4%' backgroundColor={ isNonMobile ? "rgba(245,245,245,0.3)" :item.bgc} borderRadius={2}>
               <Box display={isNonMobile ? undefined : 'none'} >
                 <img src={item.image} alt="" height={isNonMobile ? '50px' : '35px'} />
               </Box>

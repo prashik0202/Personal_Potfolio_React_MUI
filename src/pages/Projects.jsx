@@ -60,7 +60,7 @@ export default function Projects() {
                 color : 'black' ,
                 my : 1,
                 // boxShadow:  '0px 0px 300px -77px rgba(0,230,118,1)'
-                backgroundColor : '#f5f5f5'
+                backgroundColor : 'rgba(245,245,245,0.3)'
               }} 
               className='card'
             >
