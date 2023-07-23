@@ -19,7 +19,7 @@ export default function Intro() {
                 Prashik Gamre
             </Typography>
 
-            <Typography variant={isNonMobile ? 'h5' : 'h6'} sx={{ color : '#212121'}} className='tracking-in-expand'>Full Stack Developer</Typography>
+            <Typography variant={isNonMobile ? 'h5' : 'h6'} sx={{ color : '#212121'}} className='tracking-in-expand'>Developer</Typography>
             
             {isNonMobile ? <br /> : ''}
 
