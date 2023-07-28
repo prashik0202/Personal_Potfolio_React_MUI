@@ -16,7 +16,13 @@ const project = [
   { 
     "id" : "1", 
     "title" : "Om Sai Engineering", 
-    "description" : "Om Sai Engineering produce and design Dyeing Machine", 
+    "description" : "Om Sai Engineering produce and design Dyeing Machine",
+    "tech" : [
+      { "id" : "t1" , "name" : "ReactJs" },
+      { "id" : "t2" , "name" : "MUI" },
+      { "id" : "t3" , "name" : "CSS3" },
+      { "id" : "t4" , "name" : "HTML5" },
+    ],
     "image" : omsai, 
     "github" : "https://github.com/prashik0202/OM_SAI_ENGG", 
     "live" : "https://saiengg-37925.web.app"
@@ -24,7 +30,13 @@ const project = [
   { 
     "id" : "2", 
     "title" : "GNS Loan Sevices", 
-    "description" : "GNS Loan Service gives best loan deals for their customer", 
+    "description" : "GNS Loan Service gives best loan deals for their customer",
+    "tech" : [
+      { "id" : "t1" , "name" : "ReactJs" },
+      { "id" : "t2" , "name" : "MUI" },
+      { "id" : "t3" , "name" : "CSS3" },
+      { "id" : "t4" , "name" : "HTML5" }
+    ],
     "image" : gns, 
     "github" : "https://github.com/prashik0202/GNS_LOAN_SEVICES", 
     "live" : "https://gnsloan.in"
@@ -32,7 +44,13 @@ const project = [
   { 
     "id" : "3", 
     "title" : "React Chat ", 
-    "description" : "This is React Chat web app where users can chat in comunity", 
+    "description" : "This is React Chat web app where users can chat in comunity",
+    "tech" : [
+      { "id" : "t1" , "name" : "ReactJs" },
+      { "id" : "t2" , "name" : "CSS3" },
+      { "id" : "t3" , "name" : "HTML5" },
+      { "id" : "t4" , "name" : "Firebase" }
+    ],
     "image" : reactchat, 
     "github" : "https://github.com/prashik0202/Realtime_Chating_web_app_using_React.js_and_firebase", 
     "live" : "https://real-time-chat-app-c8b9d.web.app/"
@@ -69,17 +87,29 @@ export default function Projects() {
               image={item.image}
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography 
+                  gutterBottom 
+                  variant="h5" 
+                  // component="div"
+                  className='text'
+                >
                 {item.title}
                 </Typography>
-                <Typography variant="body2" color="black">
+                <Typography variant="body1" color="black">
                 {item.description}
                 </Typography>
+                <div style={{ display : 'flex'}}>
+                  {item.tech.map((tech) => (
+                    <Box sx={{ backgroundColor : 'white'}} mx={1} borderRadius={3} mt={2}>
+                    <Typography variant='body2' p={1} className='text' >#{tech.name}</Typography>
+                    </Box>
+                  ))}
+                </div>
               </CardContent>
               <CardActions>
                 <Button 
                   size="small" 
-                  sx={{ color : '#00c853'}}
+                  sx={{ color : 'black'}}
                   startIcon={<GitHubIcon />}
                   href={item.github}
                   target='_blank'
@@ -88,7 +118,7 @@ export default function Projects() {
                 </Button>
                 <Button 
                   size="small" 
-                  sx={{ color : '#00c853'}}
+                  sx={{ color : 'black'}}
                   startIcon={<OpenInNewIcon />}
                   href={item.live}
                   target='_blank'

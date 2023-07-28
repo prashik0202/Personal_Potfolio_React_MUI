@@ -43,3 +43,8 @@
     }
 }
   
+.text {
+  background-image: linear-gradient(to right, #002143, #00264a, #012b52, #003159, #003661);;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
