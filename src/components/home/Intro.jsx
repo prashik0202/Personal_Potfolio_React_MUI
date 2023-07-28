@@ -11,7 +11,7 @@ export default function Intro() {
     const isNonMobile = useMediaQuery("(min-width : 600px)")
     return (
         <Box
-            paddingTop={ isNonMobile ? "40%" : "20%"}
+            paddingTop={ isNonMobile ? "35%" : "20%"}
             paddingBottom="10%" 
         >
             <Typography variant={isNonMobile ? 'h2' : 'h3'} sx={{ color : 'black'}} className='tracking-in-expand'>

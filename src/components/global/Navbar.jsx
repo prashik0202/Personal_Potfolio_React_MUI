@@ -126,7 +126,7 @@ function Navbar(props) {
               </Button>
             </Link>
 
-            <Link to='skills' spy={true} smooth={true} offset={-150} duration={500}>
+            <Link to='skills' spy={true} smooth={true} offset={-60} duration={500}>
               <Button 
                 sx={{ 
                   color: 'black',
@@ -139,7 +139,7 @@ function Navbar(props) {
               </Button>
             </Link>
 
-            <Link to='projects' spy={true} smooth={true} offset={-250} duration={500}>
+            <Link to='projects' spy={true} smooth={true} offset={-100} duration={500}>
               <Button 
                 sx={{ 
                   color: 'black',
@@ -152,7 +152,7 @@ function Navbar(props) {
               </Button>
             </Link>
 
-            <Link to='contact' spy={true} smooth={true} offset={-90} duration={500}>
+            <Link to='contact' spy={true} smooth={true} offset={-80} duration={500}>
               <Button 
                 sx={{ 
                   color: 'black',

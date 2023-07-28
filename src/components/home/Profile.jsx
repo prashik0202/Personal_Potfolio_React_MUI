@@ -8,7 +8,7 @@ export default function Profile() {
     return (
         <div className='profile'>
             <Box
-                marginTop={isNonMobile ? '200px' : '0px'}
+                marginTop={isNonMobile ? '180px' : '0px'}
                 marginLeft={isNonMobile ? '60px' : '0px'}
                 sx={{
                     width: '100%',
@@ -16,15 +16,15 @@ export default function Profile() {
                     height: 'auto',
                     borderRadius: '50%',
                     overflow: 'hidden',
-                    // backgroundColor : '#00e676',
+                    backgroundColor : 'rgba(240,240,240,0.5)',
                     // boxShadow:  '0px 0px 300px -77px rgba(0,230,118,1)'
                 }}
             >
                 <img 
                     src={pp}
                     alt="" 
-                    style={{ width: '100%', height: 'auto' , filter: 'brightness(1)' }}
-                    
+                    style={{ width: '100%', height: 'auto' }}
+                    className='me'
                 />
             </Box>
         </div>
