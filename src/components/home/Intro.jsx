@@ -14,15 +14,15 @@ export default function Intro() {
             paddingTop={ isNonMobile ? "35%" : "20%"}
             paddingBottom="10%" 
         >
-            <Typography variant={isNonMobile ? 'h2' : 'h3'} sx={{ color : 'black'}} className='tracking-in-expand'>
+            <Typography variant={isNonMobile ? 'h2' : 'h3'} className='tracking-in-expand' sx={{ color : 'rgba(135,255,245,0.9)'}}>
                 Prashik Gamre
             </Typography>
 
-            <Typography variant={isNonMobile ? 'h4' : 'h5'} sx={{ color : '#212121'}} className='tracking-in-expand'>Developer</Typography>
+            <Typography variant={isNonMobile ? 'h4' : 'h5'} className='tracking-in-expand'>Developer</Typography>
             
             {isNonMobile ? <br /> : ''}
 
-            <Typography variant={isNonMobile ?'body1' : 'body1'} sx={{ color : '#212121'}} >
+            <Typography variant={isNonMobile ?'body1' : 'body1'}  >
                 I'm undergraduate I.T student in Mumbai University. <br />
                 As an IT undergrad student, I am passionate about technology and its transformative potential.<br/> My personal website showcases my journey in exploring innovative solutions and my commitment to continuous learning in the ever-evolving world of IT. Let's connect and delve into the realm of technology together!
             </Typography>
@@ -45,7 +45,7 @@ export default function Intro() {
                   href='https://github.com/prashik0202'
                   target='_blank'
                 >
-                  <GitHubIcon sx={{ color : 'black'}}/>
+                  <GitHubIcon sx={{ color : 'white'}}/>
                 </IconButton> 
                 <IconButton
                   href='https://www.instagram.com/_prashik_1223'
@@ -60,7 +60,7 @@ export default function Intro() {
                   <FacebookIcon sx={{ color : 'rgb(24, 119, 242)'}}/>
                 </IconButton>
             </Box>
-            <Typography variant='body2' sx={{ color : '#cococo'}} className='tracking-in-expand'>gamreprashik03@gmail.com</Typography>
+            {/* <Typography variant='body2' sx={{ color : '#cococo'}} className='tracking-in-expand'>gamreprashik03@gmail.com</Typography> */}
         </Box>
     )
 }

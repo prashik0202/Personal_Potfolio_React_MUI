@@ -8,9 +8,10 @@ export const theme = createTheme({
       ].join(',')
     },
     palette : {
-      mode : 'light',
+      mode : 'dark',
       primary : {
-        main : '#212121'
+        main : 'rgba(135,255,245,0.9)',
+
       }
     }
 });

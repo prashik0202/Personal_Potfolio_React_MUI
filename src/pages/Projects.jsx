@@ -64,7 +64,7 @@ export default function Projects() {
   return (
     <div id='projects'>
     <Box  marginTop={isNonMobile ? 30 : 5} marginBottom={10}>
-      <Typography variant='h5' sx={{ color : '#212121'}}>Projects</Typography>
+      <Typography variant='h5' sx={{ color : 'rgba(135,255,245,0.9)'}}>Projects</Typography>
       <Box marginTop={5}>
 
         <Grid container spacing={2}>
@@ -75,10 +75,10 @@ export default function Projects() {
               elevation={15}
               sx={{ 
                 maxWidth: '100%' , 
-                color : 'black' ,
+                color : 'rgba(135,255,245,0.9)' ,
                 my : 1,
                 // boxShadow:  '0px 0px 300px -77px rgba(0,230,118,1)'
-                backgroundColor : 'rgba(245,245,245,0.3)'
+                // backgroundColor : 'rgba(245,245,245,0.7)'
               }} 
               className='card'
             >
@@ -90,18 +90,18 @@ export default function Projects() {
                 <Typography 
                   gutterBottom 
                   variant="h5" 
-                  // component="div"
-                  className='text'
+                  component="div"
+                  // className='text'
                 >
                 {item.title}
                 </Typography>
-                <Typography variant="body1" color="black">
+                <Typography variant="body1" color='white'>
                 {item.description}
                 </Typography>
                 <div style={{ display : 'flex'}}>
                   {item.tech.map((tech) => (
-                    <Box sx={{ backgroundColor : 'white'}} mx={1} borderRadius={3} mt={2}>
-                    <Typography variant='body2' p={1} className='text' >#{tech.name}</Typography>
+                    <Box sx={{ backgroundColor : 'rgba(135,255,245,0.9)' }} mx={1} borderRadius={3} mt={2}>
+                    <Typography variant='body2' p={1} color='black' fontWeight='bold'>#{tech.name}</Typography>
                     </Box>
                   ))}
                 </div>
@@ -109,7 +109,7 @@ export default function Projects() {
               <CardActions>
                 <Button 
                   size="small" 
-                  sx={{ color : 'black'}}
+                  sx={{ color : 'white'}}
                   startIcon={<GitHubIcon />}
                   href={item.github}
                   target='_blank'
@@ -118,7 +118,7 @@ export default function Projects() {
                 </Button>
                 <Button 
                   size="small" 
-                  sx={{ color : 'black'}}
+                  sx={{ color : 'white'}}
                   startIcon={<OpenInNewIcon />}
                   href={item.live}
                   target='_blank'

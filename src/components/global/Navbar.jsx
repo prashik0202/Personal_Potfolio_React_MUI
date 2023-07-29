@@ -106,7 +106,7 @@ function Navbar(props) {
           <Typography
             variant="h5"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none',sm: 'block' } }}
+            sx={{ flexGrow: 1, display: { xs: 'none',sm: 'block' } , color : 'rgba(135,255,245,1)'}}
           >
               PG
           </Typography>
@@ -116,9 +116,9 @@ function Navbar(props) {
             <Link to='about' spy={true} smooth={true} offset={0} duration={500}>
               <Button 
                 sx={{ 
-                  color: 'black',
+                  color: 'white',
                   ":hover" : {
-                    color : '#00c853'
+                    color : 'rgba(135,255,245,1)'
                   }
                 }}
               >
@@ -129,9 +129,9 @@ function Navbar(props) {
             <Link to='skills' spy={true} smooth={true} offset={-60} duration={500}>
               <Button 
                 sx={{ 
-                  color: 'black',
+                  color: 'white',
                   ":hover" : {
-                    color : '#00c853'
+                    color : 'rgba(135,255,245,1)'
                   }
                 }}
               >
@@ -142,9 +142,9 @@ function Navbar(props) {
             <Link to='projects' spy={true} smooth={true} offset={-100} duration={500}>
               <Button 
                 sx={{ 
-                  color: 'black',
+                  color: 'white',
                   ":hover" : {
-                    color : '#00c853'
+                    color : 'rgba(135,255,245,1)'
                   }
                 }}
               >
@@ -155,9 +155,9 @@ function Navbar(props) {
             <Link to='contact' spy={true} smooth={true} offset={-80} duration={500}>
               <Button 
                 sx={{ 
-                  color: 'black',
+                  color: 'white',
                   ":hover" : {
-                    color : '#00c853'
+                    color : 'rgba(135,255,245,1)'
                   }
                 }}
               >
