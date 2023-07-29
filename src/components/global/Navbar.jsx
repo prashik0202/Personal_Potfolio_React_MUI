@@ -35,7 +35,7 @@ function Navbar(props) {
           <Link 
             to='about'
             spy={true} smooth={true} offset={0} duration={500} 
-            style={{ textDecoration : 'none' , color : '#f5f5f5'}}
+            style={{ textDecoration : 'none' , color : 'rgba(135,255,245,0.9)'}}
           >
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary="About" />
@@ -47,7 +47,7 @@ function Navbar(props) {
           <Link 
             to='skills'
             spy={true} smooth={true} offset={-50} duration={500}
-            style={{ textDecoration : 'none' , color : '#f5f5f5'}}
+            style={{ textDecoration : 'none' , color : 'rgba(135,255,245,0.9)'}}
           >
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary="Skills" />
@@ -59,7 +59,7 @@ function Navbar(props) {
           <Link 
             to='projects'
             spy={true} smooth={true} offset={-50} duration={500}
-            style={{ textDecoration : 'none' , color : '#f5f5f5'}}
+            style={{ textDecoration : 'none' , color : 'rgba(135,255,245,0.9)'}}
           >
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary="Projects" />
@@ -71,7 +71,7 @@ function Navbar(props) {
           <Link 
             to='contact' 
             spy={true} smooth={true} offset={-120} duration={500}
-            style={{ textDecoration : 'none' , color : '#f5f5f5'}}
+            style={{ textDecoration : 'none' , color : 'rgba(135,255,245,0.9)'}}
           >
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary="Contact" />
@@ -99,7 +99,7 @@ function Navbar(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } , color : 'black'}}
+            sx={{ mr: 2, display: { sm: 'none' } , color : 'rgba(135,255,245,0.9)'}}
           >
             <MenuIcon />
           </IconButton>
